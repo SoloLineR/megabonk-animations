@@ -1,5 +1,13 @@
 @import "modern-normalize";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+@font-face {
+  font-family: "VacationPostcard";
+  src: url("./fonts/VacationPostcardNf-gDnP.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --primary: #2a493d;
@@ -14,7 +22,7 @@ body {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-
+  text-shadow: 3px 4px 2px black;
   color: var(--secondary);
 }
 
