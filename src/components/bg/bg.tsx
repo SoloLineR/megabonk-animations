@@ -1,7 +1,7 @@
 import "./bg.css";
 
 const images = [
-  { src: "/assets/_0011_Amog.png", left: "0", top: "10%" },
+  { src: "/assets/_0011_Amog.png", left: "1%", top: "10%" },
   { src: "/assets/Dexecutioner.png", right: "5%", top: "20%" },
   { src: "/assets/ItemSoulHarvester.png", left: "20%", top: "60%" },
   { src: "/assets/LuckTome.png", right: "20%", top: "85%" },
