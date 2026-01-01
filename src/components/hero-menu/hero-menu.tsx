@@ -1,5 +1,8 @@
 import "./hero-menu.css";
+import { useHover } from "../../shared/context/HoverContext";
 export const HeroMenu = () => {
+  const { hoveredItem, dispatch } = useHover();
+  const items = ["Items", "Tomes", "Weapons", "Characters"];
   return (
     <div className="container hero-menu-container">
       <div className="hero-menu-munu-container">
@@ -11,10 +14,19 @@ export const HeroMenu = () => {
         <img src="/assets/LogoNew.png" className="logo" />
         <div className="hero-menu-menu">
           <ul className="hero-menu-list">
-            <li className="hero-menu-item">Items</li>
-            <li className="hero-menu-item">Tomes</li>
-            <li className="hero-menu-item">Weapons</li>
-            <li className="hero-menu-item">Characters</li>
+            {items.map((item) => (
+              <li
+                key={item}
+                className="hero-menu-item"
+                data-hovered={hoveredItem}
+                data-matched={hoveredItem === item ? "true" : "false"}
+                data-item={item.toLowerCase()}
+                onMouseEnter={() => dispatch({ type: "HOVER", item })}
+                onMouseLeave={() => dispatch({ type: "LEAVE" })}
+              >
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
