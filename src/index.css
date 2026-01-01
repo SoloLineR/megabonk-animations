@@ -1,0 +1,25 @@
+@import "modern-normalize";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #2a493d;
+  --secondary: #ffffff;
+  --accent: #489fb5;
+  --warning: #ba1200;
+  --camel: #b88b4a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #007b9d;
+  color: var(--secondary);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-inline: 20px;
+}

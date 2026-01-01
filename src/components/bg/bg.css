@@ -1,0 +1,78 @@
+.bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+
+  --duration: 1.2s;
+  --stagger: 0.25s;
+}
+
+.bg-track {
+  position: absolute;
+  width: 100dvw;
+  height: 100dvh;
+  animation: flowUp 10s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+.bg-img {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  image-rendering: pixelated;
+
+  top: var(--top);
+  left: var(--left);
+  right: var(--right);
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #eff3ef, #cfd8cc) 1;
+  background-color: #7d8a90;
+
+  background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.12) 0 1px,
+      transparent 1px 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.18) 0 1px,
+      transparent 1px 4px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.12) 0 1px,
+      transparent 1px 8px
+    );
+  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.2),
+    inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+
+  clip-path: inset(100% 0 0 0);
+
+  animation-name: show-up;
+  animation-duration: var(--duration);
+  animation-delay: calc(var(--idx) * var(--stagger));
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flowUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-12%);
+  }
+}
+
+@keyframes show-up {
+  from {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+
+  to {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
