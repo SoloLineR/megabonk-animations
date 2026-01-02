@@ -18,16 +18,22 @@
   animation: flowUp 10s ease-in-out infinite alternate;
   z-index: -1;
 }
+.bg-img-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  top: 0;
+  left: 0;
+}
 
 .bg-img {
-  position: absolute;
-  display: block;
   width: 400px;
   height: 400px;
   object-fit: contain;
   image-rendering: pixelated;
-  top: 0;
-  left: 0; /* базовая точка — верхний левый угол родителя */
 
   border: 2px solid;
   border-image: linear-gradient(90deg, #eff3ef, #cfd8cc) 1;
@@ -63,7 +69,7 @@
 .bg-img[data-hovered][data-matched="true"] {
   transform: translate(var(--translate-x, 0), var(--translate-y, 0)) scale(1.2);
 }
-.bg-img[data-hovered][data-matched="false"] {
+.bg-img-wrapper[data-hovered][data-matched="false"] {
   filter: blur(5px);
 }
 .bg-track[data-hovered] {
@@ -75,7 +81,7 @@
     transform: translateY(0);
   }
   to {
-    transform: translateY(-30%);
+    transform: translateY(-40%);
   }
 }
 

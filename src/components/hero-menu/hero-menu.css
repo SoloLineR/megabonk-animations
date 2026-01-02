@@ -40,7 +40,7 @@
   width: 300px;
   height: 67px;
 
-  animation: rotate-and-show 2s ease-out both;
+  animation: rotate-and-show 3s ease-out both;
   animation-delay: var(--logo-delay);
   will-change: transform, clip-path, opacity;
 }
