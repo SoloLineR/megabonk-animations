@@ -16,7 +16,7 @@
   width: 100dvw;
   height: 100dvh;
   animation: flowUp 10s ease-in-out infinite alternate;
-  z-index: 2;
+  z-index: -1;
 }
 .bg-img-wrapper {
   position: absolute;
