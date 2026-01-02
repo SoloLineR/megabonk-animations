@@ -1,5 +1,7 @@
+import { useRef, useState } from "react";
 import { useHover } from "../../shared/context/HoverContext";
 import "./bg.css";
+import { ExampleDialog } from "../modal/modal";
 
 const images = [
   {
@@ -25,12 +27,75 @@ const images = [
 
 export const Bg = ({ children }: { children: React.ReactNode }) => {
   const { hoveredItem } = useHover();
+  const [open, setOpen] = useState(false);
+  const imgRef = useRef<HTMLImageElement | null>(null);
+  const imgInsideModalRef = useRef<HTMLImageElement | null>(null);
+  const popUpRef = useRef<HTMLDivElement | null>(null);
+  const handleClick = (e: React.MouseEvent<HTMLImageElement>) => {
+    imgRef.current = e.currentTarget;
 
+    const outsideELBoundingRect = imgRef.current.getBoundingClientRect();
+    setOpen(true);
+    requestAnimationFrame(() => {
+      const inSideELBoundingRect =
+        imgInsideModalRef.current?.getBoundingClientRect();
+      if (
+        imgInsideModalRef.current &&
+        inSideELBoundingRect &&
+        outsideELBoundingRect &&
+        popUpRef.current
+      ) {
+        const deltaX = outsideELBoundingRect.left - inSideELBoundingRect.left;
+        const deltaY = outsideELBoundingRect.top - inSideELBoundingRect.top;
+        const deltaW = outsideELBoundingRect.width / inSideELBoundingRect.width;
+        const deltaH =
+          outsideELBoundingRect.height / inSideELBoundingRect.height;
+
+        imgInsideModalRef.current.style.setProperty("--dx", deltaX.toString());
+        imgInsideModalRef.current.style.setProperty("--dy", deltaY.toString());
+        imgInsideModalRef.current.style.setProperty("--dw", deltaW.toString());
+        imgInsideModalRef.current.style.setProperty("--dh", deltaH.toString());
+
+        const deltaXpopUp =
+          outsideELBoundingRect.left -
+          popUpRef.current.getBoundingClientRect().left;
+        const deltaYpopUp =
+          outsideELBoundingRect.top -
+          popUpRef.current.getBoundingClientRect().top;
+        const deltaWpopUp =
+          outsideELBoundingRect.width /
+          popUpRef.current.getBoundingClientRect().width;
+        const deltaHpopUp =
+          outsideELBoundingRect.height /
+          popUpRef.current.getBoundingClientRect().height;
+
+        popUpRef.current.style.setProperty("--dx", deltaXpopUp.toString());
+        popUpRef.current.style.setProperty("--dy", deltaYpopUp.toString());
+        popUpRef.current.style.setProperty("--dw", deltaWpopUp.toString());
+        popUpRef.current.style.setProperty("--dh", deltaHpopUp.toString());
+
+        imgInsideModalRef.current.dataset.flip = "invert";
+        popUpRef.current.dataset.flip = "invert";
+
+        requestAnimationFrame(() => {
+          if (imgInsideModalRef.current && popUpRef.current) {
+            imgInsideModalRef.current.dataset.flip = "play";
+            popUpRef.current.dataset.flip = "play";
+          }
+        });
+      }
+    });
+  };
   return (
     <div className="bg" data-hovered={hoveredItem}>
-      <div className="bg-track" data-hovered={hoveredItem}>
+      <div
+        className="bg-track"
+        data-hovered={hoveredItem}
+        data-open-menu={open}
+      >
         {images.map((img, i) => (
           <div
+            key={i}
             className="bg-img-wrapper"
             data-hovered={hoveredItem}
             data-matched={hoveredItem === img.type ? "true" : "false"}
@@ -47,6 +112,7 @@ export const Bg = ({ children }: { children: React.ReactNode }) => {
               src={img.src}
               className="bg-img"
               data-type={img.type}
+              onClick={handleClick}
               data-hovered={hoveredItem}
               data-matched={hoveredItem === img.type ? "true" : "false"}
               style={
@@ -60,7 +126,12 @@ export const Bg = ({ children }: { children: React.ReactNode }) => {
           </div>
         ))}
       </div>
-
+      <ExampleDialog
+        open={open}
+        setOpen={setOpen}
+        imgRef={imgInsideModalRef}
+        popUpRef={popUpRef}
+      />
       {children}
     </div>
   );

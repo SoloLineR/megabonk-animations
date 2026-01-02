@@ -1,5 +1,6 @@
 import "./hero-menu.css";
 import { useHover } from "../../shared/context/HoverContext";
+import { ExampleDialog } from "../modal/modal";
 export const HeroMenu = () => {
   const { hoveredItem, dispatch } = useHover();
   const items = ["Items", "Tomes", "Weapons", "Characters"];

@@ -16,7 +16,7 @@
   width: 100dvw;
   height: 100dvh;
   animation: flowUp 10s ease-in-out infinite alternate;
-  z-index: -1;
+  z-index: 2;
 }
 .bg-img-wrapper {
   position: absolute;
@@ -75,7 +75,9 @@
 .bg-track[data-hovered] {
   animation-play-state: paused;
 }
-
+.bg-track[data-open-menu="true"] {
+  animation-play-state: paused;
+}
 @keyframes flowUp {
   from {
     transform: translateY(0);
