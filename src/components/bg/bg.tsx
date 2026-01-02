@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { useHover } from "../../shared/context/HoverContext";
 import "./bg.css";
 import { ExampleDialog } from "../modal/modal";
+import { HeroMenu } from "../hero-menu/hero-menu";
 
 const images = [
   {
@@ -25,16 +26,19 @@ const images = [
   { src: "/assets/LuckTome.png", left: "60dvw", top: "85dvh", type: "Tomes" },
 ];
 
-export const Bg = ({ children }: { children: React.ReactNode }) => {
+export const Bg = () => {
   const { hoveredItem } = useHover();
   const [open, setOpen] = useState(false);
-  const imgRef = useRef<HTMLImageElement | null>(null);
+
+  // создаем объект ref-ов для каждой картинки по типу
+  const imgRefs = useRef<Record<string, HTMLImageElement | null>>({});
   const imgInsideModalRef = useRef<HTMLImageElement | null>(null);
   const popUpRef = useRef<HTMLDivElement | null>(null);
-  const handleClick = (e: React.MouseEvent<HTMLImageElement>) => {
-    imgRef.current = e.currentTarget;
 
-    const outsideELBoundingRect = imgRef.current.getBoundingClientRect();
+  const handleClick = (type: string) => {
+    const curRef = imgRefs.current[type]!;
+
+    const outsideELBoundingRect = curRef.getBoundingClientRect();
     setOpen(true);
     requestAnimationFrame(() => {
       const inSideELBoundingRect =
@@ -86,6 +90,7 @@ export const Bg = ({ children }: { children: React.ReactNode }) => {
       }
     });
   };
+
   return (
     <div className="bg" data-hovered={hoveredItem}>
       <div
@@ -108,11 +113,12 @@ export const Bg = ({ children }: { children: React.ReactNode }) => {
             }
           >
             <img
-              key={i}
               src={img.src}
               className="bg-img"
               data-type={img.type}
-              onClick={handleClick}
+              ref={(el) => {
+                imgRefs.current[img.type] = el;
+              }}
               data-hovered={hoveredItem}
               data-matched={hoveredItem === img.type ? "true" : "false"}
               style={
@@ -126,13 +132,13 @@ export const Bg = ({ children }: { children: React.ReactNode }) => {
           </div>
         ))}
       </div>
+      <HeroMenu handleClick={handleClick} />
       <ExampleDialog
         open={open}
         setOpen={setOpen}
         imgRef={imgInsideModalRef}
         popUpRef={popUpRef}
       />
-      {children}
     </div>
   );
 };

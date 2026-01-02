@@ -1,7 +1,10 @@
 import "./hero-menu.css";
 import { useHover } from "../../shared/context/HoverContext";
-import { ExampleDialog } from "../modal/modal";
-export const HeroMenu = () => {
+export const HeroMenu = ({
+  handleClick,
+}: {
+  handleClick: (type: string) => void;
+}) => {
   const { hoveredItem, dispatch } = useHover();
   const items = ["Items", "Tomes", "Weapons", "Characters"];
   return (
@@ -24,6 +27,7 @@ export const HeroMenu = () => {
                 data-item={item.toLowerCase()}
                 onMouseEnter={() => dispatch({ type: "HOVER", item })}
                 onMouseLeave={() => dispatch({ type: "LEAVE" })}
+                onClick={() => handleClick(item)}
               >
                 {item}
               </li>
