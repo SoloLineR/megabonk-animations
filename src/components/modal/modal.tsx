@@ -17,18 +17,6 @@ export function ExampleDialog({
       <Dialog.Portal className={styles.Portal}>
         <Dialog.Backdrop className={styles.Backdrop} />
         <Dialog.Popup ref={popUpRef} className={styles.Popup}>
-          <Dialog.Title className={styles.Title}>Notifications</Dialog.Title>
-          <Dialog.Description className={styles.Description}>
-            <img
-              src="/assets/Dexecutioner.png"
-              style={{ imageRendering: "pixelated" }}
-              className={styles.Img}
-              width={200}
-              height={200}
-              alt="dex"
-              ref={imgRef}
-            />
-          </Dialog.Description>
           <div className={styles.Actions}>
             <Dialog.Close
               onClick={() => setOpen(false)}
@@ -36,6 +24,24 @@ export function ExampleDialog({
             >
               Close
             </Dialog.Close>
+          </div>
+          <div className={styles.Content}>
+            <div className={styles.ContainerDescription}>
+              <Dialog.Title className={styles.Title}>
+                Notifications
+              </Dialog.Title>
+              <img
+                src="/assets/Dexecutioner.png"
+                style={{ imageRendering: "pixelated" }}
+                className={styles.Img}
+                alt="dex"
+                ref={imgRef}
+              />
+              <Dialog.Description className={styles.Description}>
+                Dexecutioner. A piercing blade. Small chance to instantly
+                execute an enemy.
+              </Dialog.Description>
+            </div>
           </div>
         </Dialog.Popup>
       </Dialog.Portal>

@@ -69,9 +69,8 @@
   box-sizing: border-box;
   position: fixed;
   inset: 0; /* fullscreen */
-  padding: 1.5rem;
-  background-color: black;
-  color: gray/10;
+  /* padding: 1.5rem; */
+  background-color: var(--primary);
 
   transform-origin: top left;
   /* начальная позиция FLIP */
@@ -110,12 +109,18 @@
 }
 
 .Actions {
+  position: absolute;
+  right: 20px;
+  top: 20px;
   display: flex;
   justify-content: end;
   gap: 1rem;
 }
 
 .Img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   &[data-flip="invert"] {
     transform: translate(calc(var(--dx) * 1px), calc(var(--dy) * 1px))
       scale(var(--dw), var(--dh));
@@ -124,4 +129,19 @@
     transform: none;
     transition: var(--flip-duration) var(--timing-f);
   }
+}
+
+.Content {
+  display: flex;
+}
+
+.ContainerDescription {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+  width: 100%;
+  height: 100dvh;
+  flex: 1;
 }
