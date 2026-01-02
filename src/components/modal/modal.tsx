@@ -1,17 +1,25 @@
 import { Dialog } from "@base-ui/react/dialog";
 import styles from "./modal.module.css";
+import type { AssetsJSON, TypeOfAsset } from "../../shared/types";
+import { Scrollarea } from "../scrollarea/scrollarea";
 
 export function ExampleDialog({
   open,
   setOpen,
   imgRef,
   popUpRef,
+  type,
+  data,
 }: {
   open: boolean;
   setOpen: (open: boolean) => void;
   imgRef: React.Ref<HTMLImageElement>;
   popUpRef: React.Ref<HTMLDivElement>;
+  type: TypeOfAsset | null;
+  data: AssetsJSON;
 }) {
+  const curAsset = data[type!];
+
   return (
     <Dialog.Root open={open}>
       <Dialog.Portal className={styles.Portal}>
@@ -25,6 +33,7 @@ export function ExampleDialog({
               Close
             </Dialog.Close>
           </div>
+          <div className={styles.PopupBg}></div>
           <div className={styles.Content}>
             <div className={styles.ContainerDescription}>
               <Dialog.Title className={styles.Title}>
@@ -42,6 +51,29 @@ export function ExampleDialog({
                 execute an enemy.
               </Dialog.Description>
             </div>
+            <Scrollarea>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "20px",
+                }}
+              >
+                {curAsset &&
+                  curAsset.map((asset) => (
+                    <div>
+                      {asset.name}
+                      <img
+                        src={asset.url}
+                        alt=""
+                        style={{ imageRendering: "pixelated" }}
+                        width={32}
+                        height={32}
+                      />
+                    </div>
+                  ))}
+              </div>
+            </Scrollarea>
           </div>
         </Dialog.Popup>
       </Dialog.Portal>

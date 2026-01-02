@@ -1,12 +1,13 @@
 import "./hero-menu.css";
 import { useHover } from "../../shared/context/HoverContext";
+import type { TypeOfAsset } from "../../shared/types";
 export const HeroMenu = ({
   handleClick,
 }: {
-  handleClick: (type: string) => void;
+  handleClick: (type: TypeOfAsset) => void;
 }) => {
   const { hoveredItem, dispatch } = useHover();
-  const items = ["Items", "Tomes", "Weapons", "Characters"];
+  const items: TypeOfAsset[] = ["Items", "Tomes", "Weapons", "Characters"];
   return (
     <div className="container hero-menu-container">
       <div className="hero-menu-munu-container">

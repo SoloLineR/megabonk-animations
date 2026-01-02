@@ -1,0 +1,805 @@
+{
+  "Characters": [
+    {
+      "id": "roberto1",
+      "name": "Roberto1",
+      "url": "/assets/Characters/Roberto1.png"
+    },
+    {
+      "id": "_0000_ogre",
+      "name": "_0000_Ogre",
+      "url": "/assets/Characters/_0000_Ogre.png"
+    },
+    {
+      "id": "_0002_megachad2",
+      "name": "_0002_Megachad2",
+      "url": "/assets/Characters/_0002_Megachad2.png"
+    },
+    {
+      "id": "_0003_calcium",
+      "name": "_0003_Calcium",
+      "url": "/assets/Characters/_0003_Calcium.png"
+    },
+    {
+      "id": "_0004_knight",
+      "name": "_0004_Knight",
+      "url": "/assets/Characters/_0004_Knight.png"
+    },
+    {
+      "id": "_0005_bandit",
+      "name": "_0005_Bandit",
+      "url": "/assets/Characters/_0005_Bandit.png"
+    },
+    {
+      "id": "_0006_dicehead",
+      "name": "_0006_Dicehead",
+      "url": "/assets/Characters/_0006_Dicehead.png"
+    },
+    {
+      "id": "_0007_chadwell",
+      "name": "_0007_Chadwell",
+      "url": "/assets/Characters/_0007_Chadwell.png"
+    },
+    {
+      "id": "_0008_vlad",
+      "name": "_0008_Vlad",
+      "url": "/assets/Characters/_0008_Vlad.png"
+    },
+    {
+      "id": "_0009_ninja",
+      "name": "_0009_Ninja",
+      "url": "/assets/Characters/_0009_Ninja.png"
+    },
+    {
+      "id": "_0010_spaceman",
+      "name": "_0010_Spaceman",
+      "url": "/assets/Characters/_0010_Spaceman.png"
+    },
+    {
+      "id": "_0011_amog",
+      "name": "_0011_Amog",
+      "url": "/assets/Characters/_0011_Amog.png"
+    },
+    {
+      "id": "_0012_noelle",
+      "name": "_0012_Noelle",
+      "url": "/assets/Characters/_0012_Noelle.png"
+    },
+    {
+      "id": "_0013_birdo",
+      "name": "_0013_Birdo",
+      "url": "/assets/Characters/_0013_Birdo.png"
+    },
+    {
+      "id": "_0014_bush",
+      "name": "_0014_Bush",
+      "url": "/assets/Characters/_0014_Bush.png"
+    },
+    {
+      "id": "_0015_tony",
+      "name": "_0015_Tony",
+      "url": "/assets/Characters/_0015_Tony.png"
+    },
+    {
+      "id": "_0016_monke",
+      "name": "_0016_Monke",
+      "url": "/assets/Characters/_0016_Monke.png"
+    },
+    {
+      "id": "_0017_robinette",
+      "name": "_0017_Robinette",
+      "url": "/assets/Characters/_0017_Robinette.png"
+    },
+    {
+      "id": "_0018_athena",
+      "name": "_0018_Athena",
+      "url": "/assets/Characters/_0018_Athena.png"
+    },
+    {
+      "id": "_0019_clank",
+      "name": "_0019_Clank",
+      "url": "/assets/Characters/_0019_Clank.png"
+    },
+    {
+      "id": "_0020_fox",
+      "name": "_0020_Fox",
+      "url": "/assets/Characters/_0020_Fox.png"
+    }
+  ],
+  "Items": [
+    {
+      "id": "bloody_cleaver",
+      "name": "Bloody Cleaver",
+      "url": "/assets/Items/Bloody Cleaver.png"
+    },
+    {
+      "id": "chonkplate",
+      "name": "Chonkplate",
+      "url": "/assets/Items/Chonkplate.png"
+    },
+    {
+      "id": "gamerlens",
+      "name": "GamerLens",
+      "url": "/assets/Items/GamerLens.png"
+    },
+    {
+      "id": "gasmask",
+      "name": "Gasmask",
+      "url": "/assets/Items/Gasmask.png"
+    },
+    {
+      "id": "grandmassecrettonic",
+      "name": "GrandmasSecretTonic",
+      "url": "/assets/Items/GrandmasSecretTonic.png"
+    },
+    {
+      "id": "idlejuice",
+      "name": "IdleJuice",
+      "url": "/assets/Items/IdleJuice.png"
+    },
+    {
+      "id": "itemanvil",
+      "name": "ItemAnvil",
+      "url": "/assets/Items/ItemAnvil.png"
+    },
+    {
+      "id": "itembackpack",
+      "name": "ItemBackpack",
+      "url": "/assets/Items/ItemBackpack.png"
+    },
+    {
+      "id": "itembattery",
+      "name": "ItemBattery",
+      "url": "/assets/Items/ItemBattery.png"
+    },
+    {
+      "id": "itembeefyring",
+      "name": "ItemBeefyRing",
+      "url": "/assets/Items/ItemBeefyRing.png"
+    },
+    {
+      "id": "itembeer",
+      "name": "ItemBeer",
+      "url": "/assets/Items/ItemBeer.png"
+    },
+    {
+      "id": "itembobdead",
+      "name": "ItemBobDead",
+      "url": "/assets/Items/ItemBobDead.png"
+    },
+    {
+      "id": "itembobslight",
+      "name": "ItemBobsLight",
+      "url": "/assets/Items/ItemBobsLight.png"
+    },
+    {
+      "id": "itembonker",
+      "name": "ItemBonker",
+      "url": "/assets/Items/ItemBonker.png"
+    },
+    {
+      "id": "itemborgor",
+      "name": "ItemBorgor",
+      "url": "/assets/Items/ItemBorgor.png"
+    },
+    {
+      "id": "itembossbuster",
+      "name": "ItemBossBuster",
+      "url": "/assets/Items/ItemBossBuster.png"
+    },
+    {
+      "id": "itembrassknuckle",
+      "name": "ItemBrassKnuckle",
+      "url": "/assets/Items/ItemBrassKnuckle.png"
+    },
+    {
+      "id": "itemcactus",
+      "name": "ItemCactus",
+      "url": "/assets/Items/ItemCactus.png"
+    },
+    {
+      "id": "itemcampfire",
+      "name": "ItemCampfire",
+      "url": "/assets/Items/ItemCampfire.png"
+    },
+    {
+      "id": "itemcreditcardgreen",
+      "name": "ItemCreditCardGreen",
+      "url": "/assets/Items/ItemCreditCardGreen.png"
+    },
+    {
+      "id": "itemcreditcardred",
+      "name": "ItemCreditCardRed",
+      "url": "/assets/Items/ItemCreditCardRed.png"
+    },
+    {
+      "id": "itemcurseddoll",
+      "name": "ItemCursedDoll",
+      "url": "/assets/Items/ItemCursedDoll.png"
+    },
+    {
+      "id": "itemdemonblade",
+      "name": "ItemDemonBlade",
+      "url": "/assets/Items/ItemDemonBlade.png"
+    },
+    {
+      "id": "itemdemonblood",
+      "name": "ItemDemonBlood",
+      "url": "/assets/Items/ItemDemonBlood.png"
+    },
+    {
+      "id": "itemdemonsoul",
+      "name": "ItemDemonSoul",
+      "url": "/assets/Items/ItemDemonSoul.png"
+    },
+    {
+      "id": "itemdragonfire",
+      "name": "ItemDragonfire",
+      "url": "/assets/Items/ItemDragonfire.png"
+    },
+    {
+      "id": "itemeagleclaw",
+      "name": "ItemEagleClaw",
+      "url": "/assets/Items/ItemEagleClaw.png"
+    },
+    {
+      "id": "itemechoshard",
+      "name": "ItemEchoShard",
+      "url": "/assets/Items/ItemEchoShard.png"
+    },
+    {
+      "id": "itemelectricplug",
+      "name": "ItemElectricPlug",
+      "url": "/assets/Items/ItemElectricPlug.png"
+    },
+    {
+      "id": "itemenergycore",
+      "name": "ItemEnergyCore",
+      "url": "/assets/Items/ItemEnergyCore.png"
+    },
+    {
+      "id": "itemfeathers",
+      "name": "ItemFeathers",
+      "url": "/assets/Items/ItemFeathers.png"
+    },
+    {
+      "id": "itemfork",
+      "name": "ItemFork",
+      "url": "/assets/Items/ItemFork.png"
+    },
+    {
+      "id": "itemghost",
+      "name": "ItemGhost",
+      "url": "/assets/Items/ItemGhost.png"
+    },
+    {
+      "id": "itemglovesbloody",
+      "name": "ItemGlovesBloody",
+      "url": "/assets/Items/ItemGlovesBloody.png"
+    },
+    {
+      "id": "itemglovescursed",
+      "name": "ItemGlovesCursed",
+      "url": "/assets/Items/ItemGlovesCursed.png"
+    },
+    {
+      "id": "itemgloveslightning",
+      "name": "ItemGlovesLightning",
+      "url": "/assets/Items/ItemGlovesLightning.png"
+    },
+    {
+      "id": "itemglovespoison",
+      "name": "ItemGlovesPoison",
+      "url": "/assets/Items/ItemGlovesPoison.png"
+    },
+    {
+      "id": "itemglovespower",
+      "name": "ItemGlovesPower",
+      "url": "/assets/Items/ItemGlovesPower.png"
+    },
+    {
+      "id": "itemgoldenglove",
+      "name": "ItemGoldenGlove",
+      "url": "/assets/Items/ItemGoldenGlove.png"
+    },
+    {
+      "id": "itemgoldenring",
+      "name": "ItemGoldenRing",
+      "url": "/assets/Items/ItemGoldenRing.png"
+    },
+    {
+      "id": "itemgoldenshield",
+      "name": "ItemGoldenShield",
+      "url": "/assets/Items/ItemGoldenShield.png"
+    },
+    {
+      "id": "itemgoldensneakers",
+      "name": "ItemGoldenSneakers",
+      "url": "/assets/Items/ItemGoldenSneakers.png"
+    },
+    {
+      "id": "itemgymsauce",
+      "name": "ItemGymSauce",
+      "url": "/assets/Items/ItemGymSauce.png"
+    },
+    {
+      "id": "itemholybook",
+      "name": "ItemHolyBook",
+      "url": "/assets/Items/ItemHolyBook.png"
+    },
+    {
+      "id": "itemicecrystal",
+      "name": "ItemIceCrystal",
+      "url": "/assets/Items/ItemIceCrystal.png"
+    },
+    {
+      "id": "itemicecube",
+      "name": "ItemIceCube",
+      "url": "/assets/Items/ItemIceCube.png"
+    },
+    {
+      "id": "itemkey",
+      "name": "ItemKey",
+      "url": "/assets/Items/ItemKey.png"
+    },
+    {
+      "id": "itemleechingcrystal",
+      "name": "ItemLeechingCrystal",
+      "url": "/assets/Items/ItemLeechingCrystal.png"
+    },
+    {
+      "id": "itemlightningorb",
+      "name": "ItemLightningOrb",
+      "url": "/assets/Items/ItemLightningOrb.png"
+    },
+    {
+      "id": "itemmechanics",
+      "name": "ItemMechanics",
+      "url": "/assets/Items/ItemMechanics.png"
+    },
+    {
+      "id": "itemmedkit",
+      "name": "ItemMedkit",
+      "url": "/assets/Items/ItemMedkit.png"
+    },
+    {
+      "id": "itemmirror",
+      "name": "ItemMirror",
+      "url": "/assets/Items/ItemMirror.png"
+    },
+    {
+      "id": "itemmoldycheese",
+      "name": "ItemMoldyCheese",
+      "url": "/assets/Items/ItemMoldyCheese.png"
+    },
+    {
+      "id": "itemoats",
+      "name": "ItemOats",
+      "url": "/assets/Items/ItemOats.png"
+    },
+    {
+      "id": "itemoldmask",
+      "name": "ItemOldMask",
+      "url": "/assets/Items/ItemOldMask.png"
+    },
+    {
+      "id": "itemoverpoweredlamp",
+      "name": "ItemOverpoweredLamp",
+      "url": "/assets/Items/ItemOverpoweredLamp.png"
+    },
+    {
+      "id": "itemphantomshroud",
+      "name": "ItemPhantomShroud",
+      "url": "/assets/Items/ItemPhantomShroud.png"
+    },
+    {
+      "id": "itempot",
+      "name": "ItemPot",
+      "url": "/assets/Items/ItemPot.png"
+    },
+    {
+      "id": "itempumpkin",
+      "name": "ItemPumpkin",
+      "url": "/assets/Items/ItemPumpkin.png"
+    },
+    {
+      "id": "itemrollerblades",
+      "name": "ItemRollerblades",
+      "url": "/assets/Items/ItemRollerblades.png"
+    },
+    {
+      "id": "itemscarf",
+      "name": "ItemScarf",
+      "url": "/assets/Items/ItemScarf.png"
+    },
+    {
+      "id": "itemshadowjuice",
+      "name": "ItemShadowJuice",
+      "url": "/assets/Items/ItemShadowJuice.png"
+    },
+    {
+      "id": "itemshatteredwisdom",
+      "name": "ItemShatteredWisdom",
+      "url": "/assets/Items/ItemShatteredWisdom.png"
+    },
+    {
+      "id": "itemskuleg",
+      "name": "ItemSkuleg",
+      "url": "/assets/Items/ItemSkuleg.png"
+    },
+    {
+      "id": "itemslipperyring",
+      "name": "ItemSlipperyRing",
+      "url": "/assets/Items/ItemSlipperyRing.png"
+    },
+    {
+      "id": "itemsluttycannon",
+      "name": "ItemSluttyCannon",
+      "url": "/assets/Items/ItemSluttyCannon.png"
+    },
+    {
+      "id": "itemsnek",
+      "name": "ItemSnek",
+      "url": "/assets/Items/ItemSnek.png"
+    },
+    {
+      "id": "itemsoulharvester",
+      "name": "ItemSoulHarvester",
+      "url": "/assets/Items/ItemSoulHarvester.png"
+    },
+    {
+      "id": "itemspeedycloak",
+      "name": "ItemSpeedyCloak",
+      "url": "/assets/Items/ItemSpeedyCloak.png"
+    },
+    {
+      "id": "itemspicymeatball",
+      "name": "ItemSpicyMeatball",
+      "url": "/assets/Items/ItemSpicyMeatball.png"
+    },
+    {
+      "id": "itemspikyshieldf",
+      "name": "ItemSpikyShieldf",
+      "url": "/assets/Items/ItemSpikyShieldf.png"
+    },
+    {
+      "id": "itemsuckyhoof",
+      "name": "ItemSuckyHoof",
+      "url": "/assets/Items/ItemSuckyHoof.png"
+    },
+    {
+      "id": "itemtacticalgoggles",
+      "name": "ItemTacticalGoggles",
+      "url": "/assets/Items/ItemTacticalGoggles.png"
+    },
+    {
+      "id": "itemtimebracelet",
+      "name": "ItemTimeBracelet",
+      "url": "/assets/Items/ItemTimeBracelet.png"
+    },
+    {
+      "id": "itemturbosocks",
+      "name": "ItemTurboSocks",
+      "url": "/assets/Items/ItemTurboSocks.png"
+    },
+    {
+      "id": "itemwizardshat",
+      "name": "ItemWizardsHat",
+      "url": "/assets/Items/ItemWizardsHat.png"
+    },
+    {
+      "id": "itemwrench",
+      "name": "ItemWrench",
+      "url": "/assets/Items/ItemWrench.png"
+    },
+    {
+      "id": "itemzawarudo",
+      "name": "ItemZaWarudo",
+      "url": "/assets/Items/ItemZaWarudo.png"
+    },
+    {
+      "id": "itembeacon",
+      "name": "Itembeacon",
+      "url": "/assets/Items/Itembeacon.png"
+    },
+    {
+      "id": "joesdagger",
+      "name": "JoesDagger",
+      "url": "/assets/Items/JoesDagger.png"
+    },
+    {
+      "id": "kevin",
+      "name": "Kevin",
+      "url": "/assets/Items/Kevin.png"
+    },
+    {
+      "id": "speed_boi",
+      "name": "Speed boi",
+      "url": "/assets/Items/Speed boi.png"
+    },
+    {
+      "id": "toxicbarrel",
+      "name": "ToxicBarrel",
+      "url": "/assets/Items/ToxicBarrel.png"
+    },
+    {
+      "id": "unstable_transfusion",
+      "name": "Unstable Transfusion",
+      "url": "/assets/Items/Unstable Transfusion.png"
+    },
+    {
+      "id": "itemclover",
+      "name": "itemClover",
+      "url": "/assets/Items/itemClover.png"
+    }
+  ],
+  "Tomes": [
+    {
+      "id": "armortome",
+      "name": "ArmorTome",
+      "url": "/assets/Tomes/ArmorTome.png"
+    },
+    {
+      "id": "attractiontome",
+      "name": "AttractionTome",
+      "url": "/assets/Tomes/AttractionTome.png"
+    },
+    {
+      "id": "bloodtome",
+      "name": "BloodTOme",
+      "url": "/assets/Tomes/BloodTOme.png"
+    },
+    {
+      "id": "chaostome",
+      "name": "ChaosTome",
+      "url": "/assets/Tomes/ChaosTome.png"
+    },
+    {
+      "id": "cooldowntome",
+      "name": "CooldownTome",
+      "url": "/assets/Tomes/CooldownTome.png"
+    },
+    {
+      "id": "cursedtome",
+      "name": "CursedTome",
+      "url": "/assets/Tomes/CursedTome.png"
+    },
+    {
+      "id": "damagetome",
+      "name": "DamageTome",
+      "url": "/assets/Tomes/DamageTome.png"
+    },
+    {
+      "id": "durationtome",
+      "name": "DurationTome",
+      "url": "/assets/Tomes/DurationTome.png"
+    },
+    {
+      "id": "evasiontome",
+      "name": "EvasionTome",
+      "url": "/assets/Tomes/EvasionTome.png"
+    },
+    {
+      "id": "goldentome",
+      "name": "GoldenTome",
+      "url": "/assets/Tomes/GoldenTome.png"
+    },
+    {
+      "id": "healthtome",
+      "name": "HealthTome",
+      "url": "/assets/Tomes/HealthTome.png"
+    },
+    {
+      "id": "knockbacktome",
+      "name": "KnockbackTome",
+      "url": "/assets/Tomes/KnockbackTome.png"
+    },
+    {
+      "id": "lucktome",
+      "name": "LuckTome",
+      "url": "/assets/Tomes/LuckTome.png"
+    },
+    {
+      "id": "precisiontome",
+      "name": "PrecisionTome",
+      "url": "/assets/Tomes/PrecisionTome.png"
+    },
+    {
+      "id": "projectilespeedtome",
+      "name": "ProjectileSpeedTOme",
+      "url": "/assets/Tomes/ProjectileSpeedTOme.png"
+    },
+    {
+      "id": "quantitytome",
+      "name": "QuantityTome",
+      "url": "/assets/Tomes/QuantityTome.png"
+    },
+    {
+      "id": "regenerationtome",
+      "name": "RegenerationTome",
+      "url": "/assets/Tomes/RegenerationTome.png"
+    },
+    {
+      "id": "retaliation",
+      "name": "Retaliation",
+      "url": "/assets/Tomes/Retaliation.png"
+    },
+    {
+      "id": "shieldtome",
+      "name": "ShieldTome",
+      "url": "/assets/Tomes/ShieldTome.png"
+    },
+    {
+      "id": "silvertome",
+      "name": "SilverTome",
+      "url": "/assets/Tomes/SilverTome.png"
+    },
+    {
+      "id": "sizetome",
+      "name": "SizeTome",
+      "url": "/assets/Tomes/SizeTome.png"
+    },
+    {
+      "id": "speedtome",
+      "name": "SpeedTome",
+      "url": "/assets/Tomes/SpeedTome.png"
+    },
+    {
+      "id": "xptome",
+      "name": "XpTome",
+      "url": "/assets/Tomes/XpTome.png"
+    }
+  ],
+  "Weapons": [
+    {
+      "id": "aura",
+      "name": "Aura",
+      "url": "/assets/Weapons/Aura.png"
+    },
+    {
+      "id": "axe",
+      "name": "Axe",
+      "url": "/assets/Weapons/Axe.png"
+    },
+    {
+      "id": "bananarang",
+      "name": "Bananarang",
+      "url": "/assets/Weapons/Bananarang.png"
+    },
+    {
+      "id": "blackhole",
+      "name": "BlackHole",
+      "url": "/assets/Weapons/BlackHole.png"
+    },
+    {
+      "id": "bloodmagic",
+      "name": "BloodMagic",
+      "url": "/assets/Weapons/BloodMagic.png"
+    },
+    {
+      "id": "bluetooth_knife",
+      "name": "Bluetooth Knife",
+      "url": "/assets/Weapons/Bluetooth Knife.png"
+    },
+    {
+      "id": "bone",
+      "name": "Bone",
+      "url": "/assets/Weapons/Bone.png"
+    },
+    {
+      "id": "bow",
+      "name": "Bow",
+      "url": "/assets/Weapons/Bow.png"
+    },
+    {
+      "id": "chunkers",
+      "name": "Chunkers",
+      "url": "/assets/Weapons/Chunkers.png"
+    },
+    {
+      "id": "corruptedsword",
+      "name": "CorruptedSword",
+      "url": "/assets/Weapons/CorruptedSword.png"
+    },
+    {
+      "id": "dexecutioner",
+      "name": "Dexecutioner",
+      "url": "/assets/Weapons/Dexecutioner.png"
+    },
+    {
+      "id": "dice",
+      "name": "Dice",
+      "url": "/assets/Weapons/Dice.png"
+    },
+    {
+      "id": "dragonsbreath",
+      "name": "DragonsBreath",
+      "url": "/assets/Weapons/DragonsBreath.png"
+    },
+    {
+      "id": "firestaff",
+      "name": "Firestaff",
+      "url": "/assets/Weapons/Firestaff.png"
+    },
+    {
+      "id": "firewalker",
+      "name": "Firewalker",
+      "url": "/assets/Weapons/Firewalker.png"
+    },
+    {
+      "id": "frostwalker",
+      "name": "Frostwalker",
+      "url": "/assets/Weapons/Frostwalker.png"
+    },
+    {
+      "id": "herosword",
+      "name": "HeroSword",
+      "url": "/assets/Weapons/HeroSword.png"
+    },
+    {
+      "id": "katana",
+      "name": "Katana",
+      "url": "/assets/Weapons/Katana.png"
+    },
+    {
+      "id": "lightning_bolt",
+      "name": "Lightning Bolt",
+      "url": "/assets/Weapons/Lightning Bolt.png"
+    },
+    {
+      "id": "lightningstaff",
+      "name": "LightningStaff",
+      "url": "/assets/Weapons/LightningStaff.png"
+    },
+    {
+      "id": "mine",
+      "name": "Mine",
+      "url": "/assets/Weapons/Mine.png"
+    },
+    {
+      "id": "poison_flask",
+      "name": "Poison Flask",
+      "url": "/assets/Weapons/Poison Flask.png"
+    },
+    {
+      "id": "revolver",
+      "name": "Revolver",
+      "url": "/assets/Weapons/Revolver.png"
+    },
+    {
+      "id": "scythe",
+      "name": "Scythe",
+      "url": "/assets/Weapons/Scythe.png"
+    },
+    {
+      "id": "shotgun",
+      "name": "Shotgun",
+      "url": "/assets/Weapons/Shotgun.png"
+    },
+    {
+      "id": "sluttyrocket",
+      "name": "SluttyRocket",
+      "url": "/assets/Weapons/SluttyRocket.png"
+    },
+    {
+      "id": "sniper",
+      "name": "Sniper",
+      "url": "/assets/Weapons/Sniper.png"
+    },
+    {
+      "id": "space_noodle",
+      "name": "Space Noodle",
+      "url": "/assets/Weapons/Space Noodle.png"
+    },
+    {
+      "id": "sword",
+      "name": "Sword",
+      "url": "/assets/Weapons/Sword.png"
+    },
+    {
+      "id": "tornado",
+      "name": "Tornado",
+      "url": "/assets/Weapons/Tornado.png"
+    }
+  ]
+}

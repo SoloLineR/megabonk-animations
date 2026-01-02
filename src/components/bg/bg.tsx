@@ -1,8 +1,10 @@
+import data from "../../../assets.json";
 import { useRef, useState } from "react";
 import { useHover } from "../../shared/context/HoverContext";
 import "./bg.css";
 import { ExampleDialog } from "../modal/modal";
 import { HeroMenu } from "../hero-menu/hero-menu";
+import type { TypeOfAsset } from "../../shared/types";
 
 const images = [
   {
@@ -29,17 +31,17 @@ const images = [
 export const Bg = () => {
   const { hoveredItem } = useHover();
   const [open, setOpen] = useState(false);
-
-  // создаем объект ref-ов для каждой картинки по типу
+  const [type, setType] = useState<TypeOfAsset | null>(null);
   const imgRefs = useRef<Record<string, HTMLImageElement | null>>({});
   const imgInsideModalRef = useRef<HTMLImageElement | null>(null);
   const popUpRef = useRef<HTMLDivElement | null>(null);
 
-  const handleClick = (type: string) => {
+  const handleClick = (type: TypeOfAsset) => {
     const curRef = imgRefs.current[type]!;
 
     const outsideELBoundingRect = curRef.getBoundingClientRect();
     setOpen(true);
+    setType(type);
     requestAnimationFrame(() => {
       const inSideELBoundingRect =
         imgInsideModalRef.current?.getBoundingClientRect();
@@ -134,6 +136,8 @@ export const Bg = () => {
       </div>
       <HeroMenu handleClick={handleClick} />
       <ExampleDialog
+        type={type}
+        data={data}
         open={open}
         setOpen={setOpen}
         imgRef={imgInsideModalRef}
