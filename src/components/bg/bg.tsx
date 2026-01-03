@@ -94,12 +94,17 @@ export const Bg = () => {
 
   return (
     <div className="bg" data-hovered={hoveredItem}>
-      <div className="bg-track" data-open-menu={open}>
+      <div
+        className="bg-track"
+        data-hovered={hoveredItem}
+        data-open-menu={open}
+      >
         {images.map((img, i) => (
           <div
             key={i}
             className="bg-img-wrapper"
-            data-matched={hoveredItem === img.type}
+            data-hovered={hoveredItem}
+            data-matched={hoveredItem === img.type ? "true" : "false"}
             style={
               {
                 "--translate-x": img.left,

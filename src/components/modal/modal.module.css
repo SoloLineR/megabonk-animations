@@ -136,6 +136,7 @@
   max-height: 600px;
   max-width: 600px;
   object-fit: contain;
+  transition: all 0.3s ease-in-out;
   &[data-flip="invert"] {
     transform: translate(calc(var(--dx) * 1px), calc(var(--dy) * 1px))
       scale(var(--dw), var(--dh));
@@ -192,6 +193,13 @@
   gap: 1rem;
   padding-right: 80px;
   align-items: center;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.164);
+  }
+  &[data-active="true"] {
+    background-color: rgba(0, 0, 0, 0.562);
+  }
 }
 
 .Name {

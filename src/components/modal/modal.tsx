@@ -1,5 +1,5 @@
 import { Dialog } from "@base-ui/react/dialog";
-
+import { useRef, useState } from "react";
 import styles from "./modal.module.css";
 import type { AssetsJSON, TypeOfAsset } from "../../shared/types";
 import { Scrollarea } from "../scrollarea/scrollarea";
@@ -30,7 +30,14 @@ export function ExampleDialog({
   selectedAsset: SelectedAsset | null;
   setSelectedAsset: (asset: SelectedAsset) => void;
 }) {
-  const curAsset = type ? data[type] : null;
+  const curAsset = type ? data[type] : [];
+
+  // ref на viewport Scrollarea
+  const viewportRef = useRef<HTMLDivElement>(null);
+  // ref на каждый asset
+  const assetRefs = useRef<Record<string, HTMLDivElement | null>>({});
+  // флаг первого открытия
+  const [firstScrollDone, setFirstScrollDone] = useState(false);
 
   return (
     <Dialog.Root open={open}>
@@ -45,6 +52,7 @@ export function ExampleDialog({
               onClick={() => {
                 setOpen(false);
                 setType(null);
+                setFirstScrollDone(false); // сброс при закрытии
               }}
             >
               Close
@@ -67,14 +75,31 @@ export function ExampleDialog({
               </Dialog.Description>
             </div>
 
-            <Scrollarea>
+            <Scrollarea viewportRef={viewportRef}>
               <div className={styles.ContainerAssets}>
-                {curAsset?.map((asset) => (
+                {curAsset.map((asset) => (
                   <div
                     key={asset.name}
                     className={styles.Asset}
                     onClick={() => setSelectedAsset(asset)}
                     data-active={selectedAsset?.url === asset.url}
+                    ref={(el) => {
+                      assetRefs.current[asset.name] = el ?? null;
+
+                      // 🔹 Прокрутка выбранного элемента один раз при открытии
+                      if (
+                        el &&
+                        selectedAsset?.name === asset.name &&
+                        open &&
+                        !firstScrollDone
+                      ) {
+                        el.scrollIntoView({
+                          behavior: "smooth",
+                          block: "center",
+                        });
+                        setFirstScrollDone(true);
+                      }
+                    }}
                   >
                     <img src={asset.url} className={styles.ImgAsset} />
                     <p className={styles.Name}>{asset.name}</p>
