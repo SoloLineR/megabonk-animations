@@ -96,3 +96,24 @@
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   }
 }
+@media (max-width: 1440px) {
+  .bg-img {
+    width: 200px;
+    height: 200px;
+  }
+  .bg-img-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-img {
+    width: 150px;
+    height: 150px;
+  }
+  .bg-img-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+}

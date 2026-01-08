@@ -82,3 +82,22 @@
     clip-path: circle(150% at 50% 50%);
   }
 }
+@media (max-width: 1440px) {
+  .logo {
+    width: 150px;
+    height: 33px;
+    order: -1;
+  }
+  .hero-menu-item {
+    font-size: 2rem;
+  }
+  .desc {
+    font-size: 2rem;
+  }
+  .hero-menu-munu-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
