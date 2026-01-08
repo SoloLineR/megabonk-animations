@@ -1,10 +1,5 @@
-# Tasks
+# Megabonk Animations
 
-## Images
+This project was created for learning and practice purposes only.
 
-- [x] Create a wrapper for images
-- [ ] Flip images into a modal view
-
-## Effects
-
-- [ ] Ghost that chases the mouse cursor
+It is not intended for production use. The main goal of this repository is to experiment, learn new concepts, and improve programming skills.
