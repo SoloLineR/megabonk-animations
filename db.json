@@ -1,4 +1,0 @@
-{
-  "users": [{ "id": 1, "name": "Ivan", "email": "ivan@mail.com" }],
-  "posts": [{ "id": 1, "title": "Hello", "authorId": 1 }]
-}
