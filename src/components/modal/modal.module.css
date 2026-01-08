@@ -260,6 +260,16 @@
   height: 33px;
   image-rendering: pixelated;
   margin-top: 20px;
+  &[data-flip="invert"] {
+    transform: translate(calc(var(--dxl) * 1px), calc(var(--dyl) * 1px))
+      scale(var(--dwl), var(--dhl));
+  }
+
+  &[data-flip="play"] {
+    transform: none;
+    transition: transform var(--flip-duration) var(--timing-f);
+    transition-delay: var(--flip-duration);
+  }
 }
 @media (max-width: 1440px) {
   .Content {

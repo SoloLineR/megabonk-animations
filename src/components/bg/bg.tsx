@@ -23,6 +23,8 @@ export const Bg = () => {
   const imgRefs = useRef<Record<string, HTMLImageElement | null>>({});
   const imgInsideModalRef = useRef<HTMLImageElement | null>(null);
   const popUpRef = useRef<HTMLDivElement | null>(null);
+  const logoInModalRef = useRef<HTMLImageElement | null>(null);
+  const logoInMenuRef = useRef<HTMLImageElement | null>(null);
 
   // 🔹 Генерация случайных фоновых картинок один раз при монтировании
   const [images] = useState(() => {
@@ -39,29 +41,39 @@ export const Bg = () => {
     });
   });
 
-  // 🔹 Открытие модалки
   const handleClick = (type: TypeOfAsset) => {
     const curRef = imgRefs.current[type];
-
-    // Находим asset, который на фоне
     const bgImageObj = images.find((img) => img.type === type);
     const matchedAsset = bgImageObj?.asset || data[type][0];
+
+    const outsideModalRefLogo = logoInMenuRef.current;
 
     setSelectedAsset(matchedAsset);
     setType(type);
     setOpen(true);
 
-    if (!curRef) return;
+    if (!curRef || !outsideModalRefLogo) return;
+
+    const outsideModalBoundingRectLogo =
+      outsideModalRefLogo.getBoundingClientRect();
 
     const outsideELBoundingRect = curRef.getBoundingClientRect();
 
     requestAnimationFrame(() => {
       const insideRect = imgInsideModalRef.current?.getBoundingClientRect();
       const popupRect = popUpRef.current?.getBoundingClientRect();
+      const insideModalBoundingRectLogo =
+        logoInModalRef.current?.getBoundingClientRect();
 
-      if (!insideRect || !popupRect || !imgInsideModalRef.current) return;
+      if (
+        !insideRect ||
+        !popupRect ||
+        !imgInsideModalRef.current ||
+        !insideModalBoundingRectLogo ||
+        !logoInModalRef.current
+      )
+        return;
 
-      // Анимация "вырастания" картинки
       const dx = outsideELBoundingRect.left - insideRect.left;
       const dy = outsideELBoundingRect.top - insideRect.top;
       const dw = outsideELBoundingRect.width / insideRect.width;
@@ -82,12 +94,41 @@ export const Bg = () => {
       popUpRef.current?.style.setProperty("--dw", dwPopup.toString());
       popUpRef.current?.style.setProperty("--dh", dhPopup.toString());
 
-      imgInsideModalRef.current.dataset.flip = "invert";
+      const dxLogoModal =
+        outsideModalBoundingRectLogo.left - insideModalBoundingRectLogo.left;
+      const dyLogoModal =
+        outsideModalBoundingRectLogo.top - insideModalBoundingRectLogo.top;
+      const dwLogoModal =
+        outsideModalBoundingRectLogo.width / insideModalBoundingRectLogo.width;
+      const dhLogoModal =
+        outsideModalBoundingRectLogo.height /
+        insideModalBoundingRectLogo.height;
+
+      logoInModalRef.current!.style.setProperty(
+        "--dxl",
+        dxLogoModal.toString()
+      );
+      logoInModalRef.current!.style.setProperty(
+        "--dyl",
+        dyLogoModal.toString()
+      );
+      logoInModalRef.current!.style.setProperty(
+        "--dwl",
+        dwLogoModal.toString()
+      );
+      logoInModalRef.current!.style.setProperty(
+        "--dhl",
+        dhLogoModal.toString()
+      );
+
+      imgInsideModalRef.current!.dataset.flip = "invert";
       popUpRef.current!.dataset.flip = "invert";
+      logoInModalRef.current!.dataset.flip = "invert";
 
       requestAnimationFrame(() => {
         imgInsideModalRef.current!.dataset.flip = "play";
         popUpRef.current!.dataset.flip = "play";
+        logoInModalRef.current!.dataset.flip = "play";
       });
     });
   };
@@ -124,7 +165,7 @@ export const Bg = () => {
         ))}
       </div>
 
-      <HeroMenu handleClick={handleClick} />
+      <HeroMenu logoRefInMenu={logoInMenuRef} handleClick={handleClick} />
 
       <ExampleDialog
         open={open}
@@ -136,6 +177,7 @@ export const Bg = () => {
         popUpRef={popUpRef}
         selectedAsset={selectedAsset}
         setSelectedAsset={setSelectedAsset}
+        logoRefInModal={logoInModalRef}
       />
     </div>
   );

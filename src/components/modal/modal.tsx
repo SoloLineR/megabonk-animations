@@ -19,6 +19,7 @@ export function ExampleDialog({
   setType,
   selectedAsset,
   setSelectedAsset,
+  logoRefInModal,
 }: {
   open: boolean;
   setOpen: (open: boolean) => void;
@@ -29,6 +30,7 @@ export function ExampleDialog({
   setType: (type: TypeOfAsset | null) => void;
   selectedAsset: SelectedAsset | null;
   setSelectedAsset: (asset: SelectedAsset) => void;
+  logoRefInModal: React.Ref<HTMLImageElement>;
 }) {
   const curAsset = type ? data[type] : [];
 
@@ -76,7 +78,12 @@ export function ExampleDialog({
               </Dialog.Description>
             </div>
 
-            <img src="/assets/LogoNew.png" className={styles.Logo} alt="logo" />
+            <img
+              src="/assets/LogoNew.png"
+              ref={logoRefInModal}
+              className={styles.Logo}
+              alt="logo"
+            />
 
             <Scrollarea viewportRef={viewportRef}>
               <div className={styles.ContainerAssets}>
