@@ -137,6 +137,7 @@
   max-width: 600px;
   object-fit: contain;
   transition: all 0.3s ease-in-out;
+  animation: show-up 0.5s ease-out forwards;
   &[data-flip="invert"] {
     transform: translate(calc(var(--dx) * 1px), calc(var(--dy) * 1px))
       scale(var(--dw), var(--dh));
@@ -241,4 +242,14 @@
     );
   box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.2),
     inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+}
+
+@keyframes show-up {
+  from {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+
+  to {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
 }

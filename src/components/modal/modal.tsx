@@ -64,6 +64,7 @@ export function ExampleDialog({
               <Dialog.Title className={styles.Title}>{type}</Dialog.Title>
               <div className={styles.Picture}>
                 <img
+                  key={selectedAsset?.url}
                   ref={imgRef}
                   src={selectedAsset?.url}
                   className={styles.Img}
