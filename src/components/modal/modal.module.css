@@ -11,14 +11,14 @@
   padding: 0 0.875rem;
   margin: 0;
   outline: 0;
-  border: 1px solid var(--secondary);
+  border: 1px solid black;
   border-radius: 0.375rem;
-  background-color: var(--camel);
+  background-color: white;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
-  color: var(--primary);
+  color: black;
   user-select: none;
 
   @media (hover: hover) {
