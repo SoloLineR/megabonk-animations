@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.0.0",
+    "gh-pages": "^6.3.0",
     "modern-normalize": "^3.0.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
