@@ -2,108 +2,108 @@
   "Characters": [
     {
       "id": "roberto1",
-      "name": "Roberto1",
+      "name": "Roberto",
       "url": "./assets/Characters/Roberto1.png"
     },
     {
       "id": "_0000_ogre",
-      "name": "_0000_Ogre",
-      "url": "./assets/Characters/_0000_Ogre.png"
+      "name": "Ogre",
+      "url": "./assets/Characters/Ogre.png"
     },
     {
       "id": "_0002_megachad2",
-      "name": "_0002_Megachad2",
-      "url": "./assets/Characters/_0002_Megachad2.png"
+      "name": "Megachad",
+      "url": "./assets/Characters/Megachad2.png"
     },
     {
       "id": "_0003_calcium",
-      "name": "_0003_Calcium",
-      "url": "./assets/Characters/_0003_Calcium.png"
+      "name": "Calcium",
+      "url": "./assets/Characters/Calcium.png"
     },
     {
       "id": "_0004_knight",
-      "name": "_0004_Knight",
-      "url": "./assets/Characters/_0004_Knight.png"
+      "name": "Knight",
+      "url": "./assets/Characters/Knight.png"
     },
     {
       "id": "_0005_bandit",
-      "name": "_0005_Bandit",
-      "url": "./assets/Characters/_0005_Bandit.png"
+      "name": "Bandit",
+      "url": "./assets/Characters/Bandit.png"
     },
     {
       "id": "_0006_dicehead",
-      "name": "_0006_Dicehead",
-      "url": "./assets/Characters/_0006_Dicehead.png"
+      "name": "Dicehead",
+      "url": "./assets/Characters/Dicehead.png"
     },
     {
       "id": "_0007_chadwell",
-      "name": "_0007_Chadwell",
-      "url": "./assets/Characters/_0007_Chadwell.png"
+      "name": "Chadwell",
+      "url": "./assets/Characters/Chadwell.png"
     },
     {
       "id": "_0008_vlad",
-      "name": "_0008_Vlad",
-      "url": "./assets/Characters/_0008_Vlad.png"
+      "name": "Vlad",
+      "url": "./assets/Characters/Vlad.png"
     },
     {
       "id": "_0009_ninja",
-      "name": "_0009_Ninja",
-      "url": "./assets/Characters/_0009_Ninja.png"
+      "name": "Ninja",
+      "url": "./assets/Characters/Ninja.png"
     },
     {
       "id": "_0010_spaceman",
-      "name": "_0010_Spaceman",
-      "url": "./assets/Characters/_0010_Spaceman.png"
+      "name": "Spaceman",
+      "url": "./assets/Characters/Spaceman.png"
     },
     {
       "id": "_0011_amog",
-      "name": "_0011_Amog",
-      "url": "./assets/Characters/_0011_Amog.png"
+      "name": "Amog",
+      "url": "./assets/Characters/Amog.png"
     },
     {
       "id": "_0012_noelle",
-      "name": "_0012_Noelle",
-      "url": "./assets/Characters/_0012_Noelle.png"
+      "name": "Noelle",
+      "url": "./assets/Characters/Noelle.png"
     },
     {
       "id": "_0013_birdo",
-      "name": "_0013_Birdo",
-      "url": "./assets/Characters/_0013_Birdo.png"
+      "name": "Birdo",
+      "url": "./assets/Characters/Birdo.png"
     },
     {
       "id": "_0014_bush",
-      "name": "_0014_Bush",
-      "url": "./assets/Characters/_0014_Bush.png"
+      "name": "Bush",
+      "url": "./assets/Characters/Bush.png"
     },
     {
       "id": "_0015_tony",
-      "name": "_0015_Tony",
-      "url": "./assets/Characters/_0015_Tony.png"
+      "name": "Tony",
+      "url": "./assets/Characters/Tony.png"
     },
     {
       "id": "_0016_monke",
-      "name": "_0016_Monke",
-      "url": "./assets/Characters/_0016_Monke.png"
+      "name": "Monke",
+      "url": "./assets/Characters/Monke.png"
     },
     {
       "id": "_0017_robinette",
-      "name": "_0017_Robinette",
-      "url": "./assets/Characters/_0017_Robinette.png"
+      "name": "Robinette",
+      "url": "./assets/Characters/Robinette.png"
     },
     {
       "id": "_0018_athena",
-      "name": "_0018_Athena",
-      "url": "./assets/Characters/_0018_Athena.png"
+      "name": "Athena",
+      "url": "./assets/Characters/Athena.png"
     },
     {
       "id": "_0019_clank",
-      "name": "_0019_Clank",
-      "url": "./assets/Characters/_0019_Clank.png"
+      "name": "Clank",
+      "url": "./assets/Characters/Clank.png"
     },
     {
       "id": "_0020_fox",
-      "name": "_0020_Fox",
-      "url": "./assets/Characters/_0020_Fox.png"
+      "name": "Fox",
+      "url": "./assets/Characters/Fox.png"
     }
   ],
   "Items": [
