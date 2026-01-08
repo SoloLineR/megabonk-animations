@@ -76,6 +76,8 @@ export function ExampleDialog({
               </Dialog.Description>
             </div>
 
+            <img src="/assets/LogoNew.png" className={styles.Logo} alt="logo" />
+
             <Scrollarea viewportRef={viewportRef}>
               <div className={styles.ContainerAssets}>
                 {curAsset.map((asset) => (
