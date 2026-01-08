@@ -90,7 +90,7 @@ export const Bob = () => {
   return (
     <img
       className={styles.bob}
-      src="/assets/bob/ItemBobDead.png"
+      src="./assets/bob/ItemBobDead.png"
       width={64}
       height={64}
       ref={imgRef}

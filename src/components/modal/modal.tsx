@@ -97,7 +97,7 @@ export function ExampleDialog({
             </div>
 
             <img
-              src="/assets/LogoNew.png"
+              src="./assets/LogoNew.png"
               ref={logoRefInModal}
               className={styles.Logo}
               alt="logo"

@@ -18,7 +18,7 @@ export const HeroMenu = ({
           powerful! Grab loot, level up, unlock characters and upgrade to create
           unique and crazy builds as you fend off hordes of creatures!
         </p>
-        <img ref={logoRefInMenu} src="/assets/LogoNew.png" className="logo" />
+        <img ref={logoRefInMenu} src="./assets/LogoNew.png" className="logo" />
         <div className="hero-menu-menu">
           <ul className="hero-menu-list">
             {items.map((item) => (
